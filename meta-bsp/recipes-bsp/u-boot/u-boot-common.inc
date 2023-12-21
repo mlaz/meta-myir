@@ -19,14 +19,17 @@ SRC_URI = "git://git.denx.de/u-boot.git"
 #SRCREV = "25276d37405151d3f77a900c74f0e19934e8d4aa"
 
 
-UBOOT_SRC ?= "git://github.com/MYiR-Dev/myir-imx-uboot.git;protocol=https"
-SRCBRANCH = "develop_2020.04"
+# UBOOT_SRC ?= "git://github.com/MYiR-Dev/myir-imx-uboot.git;protocol=https"
+# SRCBRANCH = "develop_2020.04"
+# SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
+# "
+# SRCREV = "ad7247c8820b36396cd34331dc40e8cd60aabef0"
+
+UBOOT_SRC ?= "git://github.com/Assistr/myir-imx-uboot.git;protocol=https"
+SRCBRANCH = "assistme-dev"
+#SRCBRANCH = "develop_2020.04"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 "
-SRCREV = "ad7247c8820b36396cd34331dc40e8cd60aabef0"
-
-
-
-
-
+#SRCREV = "ad7247c8820b36396cd34331dc40e8cd60aabef0"
+SRCREV = "78e389ddc096f3eab43d11696127654f09e0bd96"
 S = "${WORKDIR}/git"
