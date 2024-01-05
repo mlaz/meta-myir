@@ -53,7 +53,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     iptables \
     vsftpd \
     udev-extraconf \
-    kernel-module-rtl8188fu \
+    kernel-module-rtl8852bu \
     v4l-utils \
     libjpeg-turbo \
     libgpiod \
