@@ -1,0 +1,13 @@
+diff --git a/Makefile b/Makefile
+index 7a1d61d..9b91aee 100644
+--- a/Makefile
++++ b/Makefile
+@@ -746,5 +746,8 @@ modules:
+ #	$(CC_STRIP) --strip-unneeded ${OUT_DIR}/$(M)/$(MODULE_NAME).ko
+ #	cp Module.symvers .symvers.$(MODULE_NAME)
+ 
++modules_install:
++	$(MAKE) ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE) -C $(KSRC) M=$(M) modules_install
++
+ strip:
+ 	$(CC_STRIP) $(MODULE_NAME).ko --strip-unneeded
